@@ -1,0 +1,41 @@
+.fontcheck {
+    font-size: 1.5rem;
+ 
+  }
+  .select-content{
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+  }
+
+.button {
+      font-size: xx-large;
+     
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    color: white;
+    padding: 10px;
+   border-radius: 50%;
+    background-color: rgba(128, 0, 128, 0.733) ;
+    outline-width: 0;
+    border: none;
+}
+.dialog-box{
+    position: absolute;
+    background-color: rgba(95, 158, 160, 0.685);
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    
+}
+::selection{
+    color: white;
+    background: rgba(255, 0, 0, 0.671);
+}
+  
