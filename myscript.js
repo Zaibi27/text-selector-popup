@@ -4,7 +4,7 @@ const theButton = document.querySelector(".button"); // selects the button eleme
 const dialogBox = document.querySelector(".dialog-box") ; // selects the textarea which is hidden by default                        
 const addButton = document.querySelector(".addButton") ;
 let textArray = [] ;
-let uid , selectedText , addedText ;
+let uid , selectedText , textAdded ;
 
 // for each child element within the select-content class add a mouseup event listener
 selectArea.forEach((element) => {
@@ -74,11 +74,11 @@ function thebuttonClick(e){
 addButton.addEventListener("click" , handleAddButton) ;
 
 function handleAddButton (e){
-  addedText = document.getElementById("myTextArea").value
+  textAdded = document.getElementById("myTextArea").value
   let obj = {
     uid: uid ,
     selectedText: selectedText,
-    addedText: addedText
+    textAdded: textAdded
   }
 
   textArray.push(obj) ;
