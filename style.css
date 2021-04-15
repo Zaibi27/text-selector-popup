@@ -9,7 +9,8 @@
   }
 
 .button {
-    font-size: xx-large; 
+    font-size: x-large; 
+    font-weight: bold;
     position: absolute;
     top: 0;
     left: 0;
@@ -17,31 +18,43 @@
     color: white;
     outline-width: 0;
     border: none;
-    background-color: rgb(221, 76, 76);
-    padding-left: 15px;
-    padding-right: 15px;
+    background-color: rgb(190, 48, 48);
+    padding-left: 18px;
+    padding-right: 18px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
    
 }
-
+.button:hover{
+  background-color: #3a202b;
+  box-shadow: 0px 15px 20px rgba(229, 113, 46, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
 #myTextArea{
-  font-size: large;
-  border-radius: 20px;
+  font-size: medium;
+  border-radius: 5px;
   padding-top: 5px;
   padding-left: 5px;
+  background-color: whitesmoke;
 }
 
 
 .dialog-box{
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    background-color: rgba(144, 144, 144, 0.863);
+    background-color: #3a202bc4;
     color: white;
     font-size: 2rem;
-    padding: 5px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 5px;
     position: absolute;
     top: 0;
     left: 0;
     display: none;
+    justify-content: center;
+   
     
 }
 ::selection{
@@ -49,3 +62,34 @@
     background: rgba(2, 219, 129, 0.945);
 }
   
+/* .addButton{
+  border: none;
+  outline-width: 0;
+  background-color: orange;
+  color: whitesmoke;
+} */
+
+.addButton {
+  
+  height: 30px;
+ 
+  font-size: 11px;
+  text-transform: uppercase;
+  
+  font-weight: 500;
+  color: white;
+  background-color: rgb(255, 167, 2);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.addButton:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}

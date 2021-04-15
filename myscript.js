@@ -62,7 +62,7 @@ function thebuttonClick(e){
   selectedText = window.getSelection().toString().trim() ;
    uid= new Date ;
    document.getElementById("myTextArea").value = ''
-    dialogBox.style.display = "block" ;
+    dialogBox.style.display = "flex" ;
     const x = e.clientX ;
     const y = e.clientY ;
     dialogBox.style.left = `${x - 20}px` ;
